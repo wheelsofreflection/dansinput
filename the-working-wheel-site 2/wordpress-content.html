@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Working Wheel • WordPress Content</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    .wp-section { background: var(--panel); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); }
+    .wp-lead { border-inline: 5px solid var(--brand); padding-inline: 20px; background: rgba(255,255,255,.02) }
+    .rule { border: 0; height: 1px; background: linear-gradient(90deg, transparent, #1e2633, transparent); margin: 24px 0 }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px }
+    .card { background: #0f1318; border: 1px dashed #2a3446; border-radius: 12px; overflow: hidden }
+    .card .pad { padding: 16px }
+    .pill { display:inline-block; padding:.25rem .6rem; border-radius:999px; background:#028e2a; color:#fff; font-weight:700; font-size:.85rem }
+    .btn-row { display:flex; gap:12px; flex-wrap:wrap; margin: 18px 0 }
+    .btn2 { background: var(--brand); color:#001018; padding:.6rem .9rem; border-radius: 10px; text-decoration:none; font-weight:700 }
+    .btn2.alt { background: var(--panel); outline:1px solid #2a3446; color: var(--text) }
+    .muted { color: var(--muted) }
+    figure { margin: 0; }
+    .center { text-align:center }
+    .media { display:grid; grid-template-columns: 1fr 1fr; gap:16px; align-items:center }
+    .media.right { grid-template-columns: 1fr 27% }
+    .media .text { padding: 12px 16px; border-left: 2px dashed #2a3446; border-bottom: 2px dashed #2a3446; border-radius: 0 0 0 10px }
+    .gallery { display:grid; grid-template-columns: 1fr 1fr; gap:16px }
+    .curved-divider svg { display:block; width:100%; height:120px }
+    .curved-clip { margin: 12px 0; padding: 32px; background: #0f1318; border-radius: 16px;
+                   clip-path: path('M0,0 h100% v85% c-25%,-25 -75%,-25 -100%,0 z'); }
+    .yt { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; background:#000 }
+    .yt iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:0 }
+    .back-to-top { position:fixed; right:30px; bottom:30px; opacity:.8; background:#1b2330; border:1px solid #2a3446;
+                   padding:10px 12px; border-radius:9px; text-decoration:none; color:#fff; font-weight:700 }
+    @media (max-width: 900px){
+      .grid-3{ grid-template-columns:1fr }
+      .grid-2{ grid-template-columns:1fr }
+      .media, .media.right { grid-template-columns:1fr }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header container">
+  <a class="brand" href="index.html"><span class="wheel">⚙️</span><span class="brand-text">The Working Wheel</span></a>
+  <nav class="nav"><a class="btn" href="index.html#portfolio">Back to Portfolio</a></nav>
+</header>
+
+<main class="container">
+  <section class="wp-section">
+    <p class="wp-lead">
+      As a web developer focused on <strong>WordPress frontend development</strong>, I have gained valuable experience working
+      with several clients who rely on WordPress for their websites. Currently, I have <strong>2–3 active clients</strong>, and I’m committed
+      to delivering responsive, user‑friendly, and visually appealing websites. My expertise extends to other
+      <strong>Content Management Systems</strong> (CMS), including <strong>Weebly</strong>, which I am actively using in my current internship.
+    </p>
+
+    <hr class="rule" />
+
+    <div class="grid-3">
+      <article class="card">
+        <figure class="center"><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/calendar_s.jpg" alt="Azteknology calendar sample" style="max-width:262px;width:100%;height:auto"></figure>
+        <figure class="center"><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/image.png" alt="Azteknology emblem" style="max-width:173px;width:100%;height:auto"></figure>
+        <div class="pad">
+          <p class="pill">Azteknology</p>
+          <p>Azteknology (pronounced: As‑technology) focuses on “Cosmic Identity” and the Ancient Mexika Chronological System (Tonalmachiotl/Aztec calendar) to understand one’s <em>Tonalli</em>.</p>
+          <div class="btn-row">
+            <a class="btn2" href="#setting">Learn More</a>
+            <a class="btn2 alt" href="https://azteknology.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="center"><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/logo-sitename.png" alt="AcostaBoxing logo" style="max-width:255px;width:100%;height:auto"></figure>
+        <div class="pad">
+          <p class="pill">AcostaBoxing.com</p>
+          <p>Official site of Guadalupe “Mr. G” Acosta: Wing Chun, Choy Lay Fut Kung Fu, Boxing, and Muay Thai. Private/group classes in Bay Area and Fresno.</p>
+          <div class="btn-row">
+            <a class="btn2" href="#A-Natural">Learn More</a>
+            <a class="btn2 alt" href="https://acostaboxing.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="center"><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/3d-cottage-logo.webp" alt="3D Cottage logo" style="max-width:251px;width:100%;height:auto"></figure>
+        <div class="pad">
+          <p class="pill">3D Cottage (3DC)</p>
+          <p>Construction & development using innovative materials and 3D printing to create sustainable, resilient, affordable homes.</p>
+          <div class="btn-row">
+            <a class="btn2" href="#A-Resilient">Learn More</a>
+            <a class="btn2 alt" href="https://3dcottage.dansinput.net/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <hr class="rule" />
+
+    <section id="setting" class="center">
+      <h2>Setting the foundation for the cosmic perspective…</h2>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/12/calendar_s.png" alt="Calendar small" style="max-width:201px;width:100%;height:auto"></figure>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/image.png" alt="Emblem" style="max-width:173px;width:100%;height:auto"></figure>
+
+      <section class="curved-divider">
+        <h3>SVG Divider</h3>
+        <p class="muted">This divider keeps elements separate.</p>
+        <svg viewBox="0 0 1440 320"><path fill="#0073aa" d="M0,224L80,202.7C160,181,320,139,480,117.3C640,96,800,96,960,101.3C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"/></svg>
+      </section>
+    </section>
+
+    <hr class="rule" />
+
+    <div class="media">
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/tonalli-screenshot-752x1024.png" alt="Tonalli form screenshot" style="width:100%;height:auto"></figure>
+      <div class="text">
+        <p>Interactive form with anti‑spam measures, integrating educational content with a transactional element.</p>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="gallery">
+        <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/smallClock-screenshot-434x1024.png" alt="Small clock" style="width:100%;height:auto"></figure>
+        <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/main-clock-demo-503x1024.png" alt="Main clock" style="width:100%;height:auto"></figure>
+      </div>
+      <div class="text"><p>Explore the 13‑day cycle (<em>Trecena</em>) and symbolic figures.</p></div>
+    </div>
+
+    <hr class="rule" />
+
+    <h2 class="center">Try Entering Your Birthday</h2>
+    <div class="card pad">
+      <p class="muted"><em>Birthdate Finder embed goes here.</em> Replace WP shortcode with a static calculator page or JS widget.</p>
+    </div>
+
+    <p>PHP calculator maps Gregorian birthdate to the Aztek calendar symbol.</p>
+
+    <hr class="rule" />
+
+    <p>Learning about the Aztec calendar can feel complex; we simplify into visuals.</p>
+
+    <div class="card pad">
+      <p class="muted"><em>Interactive image placeholder (Draw Attention).</em> Use an image‑map or custom JS overlay on GitHub Pages.</p>
+    </div>
+
+    <hr class="rule" />
+
+    <section id="A-Natural" class="center">
+      <h2>A Natural Response to Martial Arts</h2>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/logo-sitename.png" alt="AcostaBoxing site name" style="max-width:328px;width:100%;height:auto"></figure>
+    </section>
+
+    <div class="media right">
+      <div class="text">
+        <figure class="center"><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/originalLogoConcept.png" alt="Original logo" style="max-width:250px;width:100%;height:auto"></figure>
+        <p>Client requested adding the last name “ACOSTA.” I aligned the typography to a constructed grid.</p>
+      </div>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/NewGridLogo.png" alt="Grid-aligned logo" style="width:100%;height:auto"></figure>
+    </div>
+
+    <hr class="rule" />
+
+    <div class="media">
+      <figure>
+        <video controls src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/devtools.mov" style="width:100%;height:auto"></video>
+      </figure>
+      <div class="text">
+        <p>Using Chrome DevTools to target sub‑menu elements and deliver desktop‑like behavior on mobile.</p>
+        <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/12/desktop-menu.png" alt="Desktop menu screenshot" style="width:100%;height:auto"></figure>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <div class="media">
+      <div class="yt"><iframe src="https://www.youtube.com/embed/o4zCrfiBJp0" title="YouTube video" allowfullscreen></iframe></div>
+      <div class="text">
+        <p>Turning a lengthy email into a clean HTML/CSS curriculum layout saved hours.</p>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <div class="media right">
+      <div class="text">
+        <p>Guided client to manage an Etsy store and embed items on the site.</p>
+      </div>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/store-screen-1024x963.png" alt="Store screen" style="width:100%;height:auto"></figure>
+    </div>
+
+    <hr class="rule" />
+
+    <section id="A-Resilient" class="center">
+      <h2>a resilient environment starts at home</h2>
+      <p>RSG‑3D panel technology site with interactive D3.js charts (early development).</p>
+      <figure><img src="https://theworkingwheel.live-website.com/wp-content/uploads/2024/11/3d-cottage-logo.webp" alt="3D Cottage logo small" style="max-width:186px;width:100%;height:auto"></figure>
+    </section>
+
+    <hr class="rule" />
+
+    <div class="grid-2">
+      <div class="card pad">
+        <p class="muted"><em>Market size chart placeholder</em> (replace WP shortcode with D3.js or image).</p>
+        <p>Market insights on housing demand and jobs tied to development.</p>
+      </div>
+      <div class="card pad">
+        <p class="muted"><em>Phase bar graph placeholder</em> (A→D auto‑play).</p>
+        <p>Progression of investment and revenue across phases.</p>
+      </div>
+    </div>
+
+    <hr class="rule" />
+
+    <p class="center">Management hierarchy tree diagram.</p>
+    <div class="card pad center"><p class="muted"><em>Tree diagram placeholder</em> — use D3 <code>tree</code>/<code>cluster</code> layout.</p></div>
+
+    <hr class="rule" />
+
+    <section class="curved-clip">
+      <h2>Clip Path Curved Section</h2>
+      <p class="muted">CSS <code>clip-path</code> for decorative shape.</p>
+    </section>
+  </section>
+</main>
+
+<a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+
+<footer class="site-footer container">
+  <p>© {datetime.datetime.now().year} DansInput • <a href="https://azteknology.com" target="_blank" rel="noopener">Azteknology</a> • <a href="https://acostaboxing.com" target="_blank" rel="noopener">AcostaBoxing</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
